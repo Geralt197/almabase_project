@@ -20,4 +20,6 @@ c) And then the user should give the input value 'm' (type - number) as number o
 
 7. All the assumptions are already made in the file 'Assumptions.md' , please refer the file if there is any inconsistency in data.
 
+8. I couldn't deploy it properly though it works fine locally.
+
 Thank You.
