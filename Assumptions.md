@@ -3,7 +3,7 @@ Engineering Intern Task
 
 Following are some assumptions to run the app:
 
-1. All the information is extracted using free github api by ajax and jquery is used to output the desired information.
+1. All the information is extracted using free github api by ajax and jquery for making it concise and efficient.
 
 2. Whenever extracting the number of repositories or number of committees, it doesn't extract more than 30 of either of them, because the related endpoint is by default set to a    maximum of 30 values and if we want to extract more than that, maybe we have to purchase additional packages from github.
 
