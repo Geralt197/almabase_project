@@ -75,12 +75,12 @@
 	//variable 'url' for storing the data of repositories of given organisation using github api
         var url = 'https://api.github.com/users/' + org_name + '/repos';
 		
-	//main ajax function to sort repositories according to number of forks and then get the number of committees
+	//ajax function to fetch the results for repositories from the github server
         await $.ajax({
 		
             url: url,
 			
-	    //function is called if the result is returned
+	    //function is called if the result is successfully retrieved
             success: async function (result) {
 			
                 //console.log("hi i am in repos ");
@@ -93,7 +93,7 @@
 		//to output the data using jquery
                 document.querySelector("#results").innerHTML = '';
 				
-		//for each repository, sorting the committees on the basis of commit count
+		//for each repository, sorting the committees on the basis of commit count in javascript
                 for (var i = 0; i < Math.min(n, result.length); i++) {
 				
 		    //output using jquery
@@ -104,7 +104,7 @@
 					
                     console.log(url1)
 					
-	            //ajax function to sort the committees and show the output
+	            //ajax function to fetch the committees information
                     await $.ajax({
 					
                         url: url1,
